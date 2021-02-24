@@ -54,6 +54,7 @@ nav {
         color: $main-color;
     }
 }
+
 .carousel-control-prev-icon{
    
     background-image: url(./img/ICON-LEFT.png) !important;
@@ -66,4 +67,20 @@ nav {
     // padding: 20px;
     border-radius: 20px;
     opacity: 0.8;
+    position: relative;
+    left: -90px;
+}
+.carousel-control-next-icon {
+    background-image: url(./img/ICON-right.png) !important ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 5px -69px !important;
+    background: black;
+    width: 30px;
+    height: 30px;
+    // padding: 20px;
+    border-radius: 20px;
+    opacity: 0.8;
+    position: relative;
+    right: -90px;
 }

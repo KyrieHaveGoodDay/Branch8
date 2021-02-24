@@ -73,5 +73,21 @@ nav #nav-a a:hover {
   height: 30px;
   border-radius: 20px;
   opacity: 0.8;
+  position: relative;
+  left: -90px;
+}
+
+.carousel-control-next-icon {
+  background-image: url(./img/ICON-right.png) !important;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 5px -69px !important;
+  background: black;
+  width: 30px;
+  height: 30px;
+  border-radius: 20px;
+  opacity: 0.8;
+  position: relative;
+  right: -90px;
 }
 /*# sourceMappingURL=style.css.map */
