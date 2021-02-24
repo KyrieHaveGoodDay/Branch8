@@ -7,10 +7,6 @@
   font-family: 微軟證黑體;
 }
 
-body {
-  background: #6aa36a62;
-}
-
 nav {
   width: 100%;
   height: 50px;
@@ -96,31 +92,37 @@ nav #nav-a a:hover {
   right: -90px;
 }
 
-#Attractions {
+section {
+  background: #6aa36a62;
+  height: 100%;
+  padding-bottom: 20px;
+}
+
+section #Attractions {
   width: 1400px;
   text-align: center;
   margin: 0 auto;
-  margin-top: 20px;
+  padding-top: 20px;
 }
 
-#Attractions #view-title {
+section #Attractions #view-title {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 50% 50%;
       grid-template-columns: 50% 50%;
 }
 
-#Attractions #view-left {
+section #Attractions #view-left {
   font-size: 25px;
   font-weight: bold;
   text-align: left;
 }
 
-#Attractions #view-right {
+section #Attractions #view-right {
   text-align: right;
 }
 
-.btn-all {
+section .btn-all {
   width: 80px;
   height: 35px;
   background: black;
@@ -128,7 +130,7 @@ nav #nav-a a:hover {
   border-radius: 10px;
 }
 
-#view-box {
+section #view-box {
   width: 1400px;
   display: -ms-grid;
   display: grid;
@@ -138,7 +140,7 @@ nav #nav-a a:hover {
   margin: 0 auto;
 }
 
-#view-box #card-stope {
+section #view-box #card-stope {
   width: 450px;
   background: white;
   -webkit-box-shadow: 2px 8px 3px rgba(0, 0, 0, 0.3);
@@ -146,37 +148,37 @@ nav #nav-a a:hover {
   border-radius: 5px;
 }
 
-#view-box #card-stope #view-pic {
+section #view-box #card-stope #view-pic {
   width: 100%;
   height: 200px;
 }
 
-#view-box #card-stope #card-data {
+section #view-box #card-stope #card-data {
   padding: 10px 20px;
   text-align: left;
 }
 
-#view-box #card-stope #card-data h3 {
+section #view-box #card-stope #card-data h3 {
   font-size: 25px;
   font-weight: bold;
 }
 
-#view-box #card-stope #card-data p {
+section #view-box #card-stope #card-data p {
   color: #838282;
 }
 
-#view-box #card-stope #card-data #card-tage {
+section #view-box #card-stope #card-data #card-tage {
   text-align: left;
 }
 
-#view-box #card-stope #card-data #card-tage span {
+section #view-box #card-stope #card-data #card-tage span {
   display: inline-block;
   text-align: left;
   background: #ccc;
   padding: 5px 10px;
 }
 
-#view-box #card-stope #card-sm {
+section #view-box #card-stope #card-sm {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 50% 50%;
@@ -184,11 +186,11 @@ nav #nav-a a:hover {
   text-align: left;
 }
 
-#view-box .card-buttom p {
+section #view-box .card-buttom p {
   display: inline;
 }
 
-#view-box .card-buttom-bt {
+section #view-box .card-buttom-bt {
   text-align: left;
   display: -ms-grid;
   display: grid;
@@ -196,7 +198,7 @@ nav #nav-a a:hover {
       grid-template-columns: 5% 95%;
 }
 
-#view-box .card-buttom-bt p {
+section #view-box .card-buttom-bt p {
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
