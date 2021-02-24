@@ -7,6 +7,10 @@
   font-family: 微軟證黑體;
 }
 
+body {
+  background: #6aa36a62;
+}
+
 nav {
   width: 100%;
   height: 50px;
@@ -15,6 +19,7 @@ nav {
   -ms-grid-columns: 25% 50% 25%;
       grid-template-columns: 25% 50% 25%;
   text-align: center;
+  background: #fff;
 }
 
 nav div > img {
@@ -36,7 +41,7 @@ nav #nav-a {
 nav #nav-a a {
   display: inline-block;
   margin: 0 10px;
-  color: #ccc;
+  color: #838282;
   border-bottom: 0px solid black;
 }
 
@@ -60,7 +65,7 @@ nav #nav-a a:hover {
 }
 
 .carousel-caption p {
-  color: #ccc;
+  color: #838282;
 }
 
 .carousel-control-prev-icon {
@@ -89,5 +94,111 @@ nav #nav-a a:hover {
   opacity: 0.8;
   position: relative;
   right: -90px;
+}
+
+#Attractions {
+  width: 1400px;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+#Attractions #view-title {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 50% 50%;
+      grid-template-columns: 50% 50%;
+}
+
+#Attractions #view-left {
+  font-size: 25px;
+  font-weight: bold;
+  text-align: left;
+}
+
+#Attractions #view-right {
+  text-align: right;
+}
+
+.btn-all {
+  width: 80px;
+  height: 35px;
+  background: black;
+  color: white;
+  border-radius: 10px;
+}
+
+#view-box {
+  width: 1400px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 450px 450px 450px;
+      grid-template-columns: 450px 450px 450px;
+  grid-gap: 25px;
+  margin: 0 auto;
+}
+
+#view-box #card-stope {
+  width: 450px;
+  background: white;
+  -webkit-box-shadow: 2px 8px 3px rgba(0, 0, 0, 0.3);
+          box-shadow: 2px 8px 3px rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+}
+
+#view-box #card-stope #view-pic {
+  width: 100%;
+  height: 200px;
+}
+
+#view-box #card-stope #card-data {
+  padding: 10px 20px;
+  text-align: left;
+}
+
+#view-box #card-stope #card-data h3 {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+#view-box #card-stope #card-data p {
+  color: #838282;
+}
+
+#view-box #card-stope #card-data #card-tage {
+  text-align: left;
+}
+
+#view-box #card-stope #card-data #card-tage span {
+  display: inline-block;
+  text-align: left;
+  background: #ccc;
+  padding: 5px 10px;
+}
+
+#view-box #card-stope #card-sm {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 50% 50%;
+      grid-template-columns: 50% 50%;
+  text-align: left;
+}
+
+#view-box .card-buttom p {
+  display: inline;
+}
+
+#view-box .card-buttom-bt {
+  text-align: left;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 5% 95%;
+      grid-template-columns: 5% 95%;
+}
+
+#view-box .card-buttom-bt p {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 /*# sourceMappingURL=style.css.map */

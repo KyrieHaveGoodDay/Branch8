@@ -2,90 +2,207 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
-        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
-    <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+    integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+  <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
-    <!-- 導覽頁 -->
-    <nav>
-        <div>
-            <img src="./img/D&AHOSTEL.png" alt="logo">
+  <!-- 導覽頁 -->
+  <nav>
+    <div>
+      <img src="./img/D&AHOSTEL.png" alt="logo">
+    </div>
+
+    <div id="nav-a">
+      <a href="">Home</a>
+      <a href="">Events</a>
+      <a href="">News & Bulletin</a>
+      <a href="">About</a>
+    </div>
+    <div id="img-people">
+      <img src="./img/icon-people.png" alt="people">
+    </div>
+
+  </nav>
+  <!-- 輪播 -->
+
+  <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+      <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+      <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="./img/room1.jpg" class="d-block w-100 slick-img" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>WELCOME TO D&A HOSTEL TOKYO</h5>
+          <p>Aunique. diverse tiving space in the heart of tokyo</p>
         </div>
-
-        <div id="nav-a">
-            <a href="">Home</a>
-            <a href="">Events</a>
-            <a href="">News & Bulletin</a>
-            <a href="">About</a>
+      </div>
+      <div class="carousel-item">
+        <img src="./img/room2.jpg" class="d-block w-100 slick-img" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>WELCOME TO D&A HOSTEL TOKYO</h5>
+          <p>Aunique. diverse tiving space in the heart of tokyo</p>
         </div>
-        <div id="img-people">
-            <img src="./img/icon-people.png"   alt="people">
+      </div>
+      <div class="carousel-item">
+        <img src="./img/room3.jpg" class="d-block w-100 slick-img" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>WELCOME TO D&A HOSTEL TOKYO</h5>
+          <p>Aunique. diverse tiving space in the heart of tokyo</p>
         </div>
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true">
 
-    </nav>
-    <!-- 輪播 -->
-    
-        <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
-            <ol class="carousel-indicators">
-              <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
-              <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
-              <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
-            </ol>
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img src="./img/room1.jpg" class="d-block w-100 slick-img" alt="...">
-                <div class="carousel-caption d-none d-md-block">
-                  <h5>WELCOME TO D&A HOSTEL TOKYO</h5>
-                  <p>Aunique. diverse tiving space in the heart of tokyo</p>
-                </div>
-              </div>
-              <div class="carousel-item">
-                <img src="./img/room2.jpg" class="d-block w-100 slick-img" alt="...">
-                <div class="carousel-caption d-none d-md-block">
-                    <h5>WELCOME TO D&A HOSTEL TOKYO</h5>
-                    <p>Aunique. diverse tiving space in the heart of tokyo</p>
-                </div>
-              </div>
-              <div class="carousel-item">
-                <img src="./img/room3.jpg" class="d-block w-100 slick-img" alt="...">
-                <div class="carousel-caption d-none d-md-block">
-                    <h5>WELCOME TO D&A HOSTEL TOKYO</h5>
-                    <p>Aunique. diverse tiving space in the heart of tokyo</p>
-                </div>
-              </div>
-            </div>
-            <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true">
-                  
-              </span>
-              <span class="sr-only previous">Previous</span>
-            </a>
-            <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="sr-only">Next</span>
-            </a>
-          </div>
-    
-   
+      </span>
+      <span class="sr-only previous">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+  <!-- 景點 -->
+  <div id="Attractions">
+    <div id="view-title">
+      <div id="view-left">
+        <p>Surrounding Store</p>
+      </div>
+      <div id="view-right">
+        <button class="btn-all">More</button>
+      </div>
+
+    </div>
+
+  </div>
+  <!-- Surrounding Store card -->
+  <!-- 之後做vue留一個就好 -->
+  <div id="view-box">
+    <div id="card-stope">
+      <img src="./img/view1.jpg" id="view-pic" alt="view">
+      <div id="card-data">
+        <h3>Sky tree</h3>
+        <p class="JQellipsis">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla voluptas architecto
+          veritatis
+          enim doloribus mollitia cupiditate quibusdam nam sunt quas?</p>
+        <!-- tage -->
+        <div id="card-tage">
+          <span>Restaurant</span>
+          <span>Steak</span>
+        </div>
+      </div>
+      <hr>
+      <div id="card-sm">
+        <!-- 兩個icon格線 -->
+        <div class="card-buttom">
+          <img src="./img/icon-time.png" alt="time">
+          <p>11:30~23:30</p>
+        </div>
+        <div class="card-buttom">
+          <img src="./img/icon-phome.png" alt="phone">
+          <p>+852 2393 6054</p>
+        </div>
+      </div>
+      <!-- 地址另外做一個區塊 -->
+      <div class="card-buttom-bt">
+        <img src="./img/icon-location.png" alt="location">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur enim id aliquid quam quasi ea.</p>
+      </div>
+
+    </div>
+    <div id="card-stope">
+      <img src="./img/view1.jpg" id="view-pic" alt="view">
+      <div id="card-data">
+        <h3>Sky tree</h3>
+        <p class="JQellipsis">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla voluptas architecto
+          veritatis
+          enim doloribus mollitia cupiditate quibusdam nam sunt quas?</p>
+        <!-- tage -->
+        <div id="card-tage">
+          <span>Restaurant</span>
+          <span>Steak</span>
+        </div>
+      </div>
+      <hr>
+      <div id="card-sm">
+        <!-- 兩個icon格線 -->
+        <div class="card-buttom">
+          <img src="./img/icon-time.png" alt="time">
+          <p>11:30~23:30</p>
+        </div>
+        <div class="card-buttom">
+          <img src="./img/icon-phome.png" alt="phone">
+          <p>+852 2393 6054</p>
+        </div>
+      </div>
+      <!-- 地址另外做一個區塊 -->
+      <div class="card-buttom-bt">
+        <img src="./img/icon-location.png" alt="location">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur enim id aliquid quam quasi ea.</p>
+      </div>
+
+    </div>
+    <div id="card-stope">
+      <img src="./img/view1.jpg" id="view-pic" alt="view">
+      <div id="card-data">
+        <h3>Sky tree</h3>
+        <p class="JQellipsis">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla voluptas architecto
+          veritatis
+          enim doloribus mollitia cupiditate quibusdam nam sunt quas?</p>
+        <!-- tage -->
+        <div id="card-tage">
+          <span>Restaurant</span>
+          <span>Steak</span>
+        </div>
+      </div>
+      <hr>
+      <div id="card-sm">
+        <!-- 兩個icon格線 -->
+        <div class="card-buttom">
+          <img src="./img/icon-time.png" alt="time">
+          <p>11:30~23:30</p>
+        </div>
+        <div class="card-buttom">
+          <img src="./img/icon-phome.png" alt="phone">
+          <p>+852 2393 6054</p>
+        </div>
+      </div>
+      <!-- 地址另外做一個區塊 -->
+      <div class="card-buttom-bt">
+        <img src="./img/icon-location.png" alt="location">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur enim id aliquid quam quasi ea.</p>
+      </div>
+
+    </div>
+  </div>
 
 
 
 
 
 
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
-        crossorigin="anonymous"></script>
+
+
+
+
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+    crossorigin="anonymous"></script>
+  <script src="./main.js"></script>
 </body>
 
 </html>
