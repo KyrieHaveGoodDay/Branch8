@@ -8,13 +8,17 @@ $main-color:#ccc;
 }
 
 nav {
-    width: 1400px;
+    width: 100%;
     display: grid;
     grid-template-columns: 25% 50% 25%;
     text-align: center;
 
     div > img {
         margin: 10px 0;
+    }
+    #img-people{
+        text-align: right;
+        margin-right: 30px;
     }
     #nav-a {
         text-decoration: none;
