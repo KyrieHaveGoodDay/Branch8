@@ -1,0 +1,69 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 微軟證黑體;
+}
+
+nav {
+  width: 1400px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 25% 50% 25%;
+      grid-template-columns: 25% 50% 25%;
+  text-align: center;
+}
+
+nav div > img {
+  margin: 10px 0;
+}
+
+nav #nav-a {
+  text-decoration: none;
+  padding: 15px;
+  text-align: left;
+}
+
+nav #nav-a a {
+  display: inline-block;
+  margin: 0 10px;
+  color: #ccc;
+}
+
+nav #nav-a a:hover {
+  border-bottom: 3px solid black;
+}
+
+.slick-img {
+  height: 400px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.carousel-caption {
+  margin-bottom: 100px;
+}
+
+.carousel-caption h5 {
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.carousel-caption p {
+  color: #ccc;
+}
+
+.carousel-control-prev-icon {
+  background-image: url(./img/ICON-LEFT.png) !important;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background: black;
+  width: 30px;
+  height: 30px;
+  padding: 20px;
+  border-radius: 20px;
+  opacity: 0.8;
+}
+/*# sourceMappingURL=style.css.map */
