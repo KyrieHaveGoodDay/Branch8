@@ -7,6 +7,10 @@
   font-family: 微軟證黑體;
 }
 
+body {
+  background: #ebe9e9;
+}
+
 nav {
   width: 100%;
   height: 50px;
@@ -122,14 +126,6 @@ section #Attractions #view-right {
   text-align: right;
 }
 
-section .btn-all {
-  width: 80px;
-  height: 35px;
-  background: black;
-  color: white;
-  border-radius: 10px;
-}
-
 section #view-box {
   width: 1250px;
   display: -ms-grid;
@@ -161,6 +157,7 @@ section #view-box #card-stope #card-data {
 section #view-box #card-stope #card-data h3 {
   font-size: 25px;
   font-weight: bold;
+  text-align: left;
 }
 
 section #view-box #card-stope #card-data p {
@@ -203,5 +200,180 @@ section #view-box .card-buttom-bt p {
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
+}
+
+.btn-all {
+  width: 80px;
+  height: 35px;
+  background: black;
+  color: white;
+  border-radius: 10px;
+}
+
+#new {
+  width: 1250px;
+  height: 100vh;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 820px 400px;
+      grid-template-columns: 820px 400px;
+  margin: 0 auto;
+  margin-top: 30px;
+  grid-gap: 30px;
+}
+
+#new #events {
+  width: 820px;
+}
+
+#new #events #event-title {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 50% 50%;
+      grid-template-columns: 50% 50%;
+}
+
+#new #events #event-title #event-left {
+  font-size: 25px;
+  font-weight: bold;
+  text-align: left;
+}
+
+#new #events #event-title #event-right {
+  text-align: right;
+}
+
+#new #events #event-card {
+  width: 100%;
+  height: 300px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 250px 550px;
+      grid-template-columns: 250px 550px;
+  background: #fff;
+  -webkit-box-shadow: 2px 8px 3px rgba(0, 0, 0, 0.3);
+          box-shadow: 2px 8px 3px rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+}
+
+#new #events #event-card #event-img img {
+  width: 250px;
+  height: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+#new #events #event-card #event-text {
+  padding: 5px 15px;
+}
+
+#new #events #event-card #event-text #text-time {
+  font-size: 30px;
+  color: #838282;
+  font-weight: bold;
+}
+
+#new #events #event-card #event-text h4 {
+  font-size: 22px;
+}
+
+#new #events #event-card #event-tag {
+  text-align: left;
+  margin-top: 60px;
+}
+
+#new #events #event-card #event-tag span {
+  display: inline-block;
+  text-align: left;
+  background: #ccc;
+  padding: 5px 10px;
+}
+
+#new #events #event-card #event-buttom {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 50% 50%;
+      grid-template-columns: 50% 50%;
+}
+
+#new #events #event-card #event-buttom .event-icon {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 5% 95%;
+      grid-template-columns: 5% 95%;
+}
+
+#new #events #event-card #event-buttom .event-icon p {
+  margin-left: 20px;
+}
+
+#new #news-box {
+  width: 400px;
+}
+
+#new #news-box #news-title {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 50% 50%;
+      grid-template-columns: 50% 50%;
+}
+
+#new #news-box #news-title #news-left {
+  font-size: 25px;
+  font-weight: bold;
+  text-align: left;
+}
+
+#new #news-box #news-title #news-right {
+  text-align: right;
+}
+
+#new #news-box #news-card {
+  height: 200px;
+  background: #fff;
+  -webkit-box-shadow: 2px 8px 3px rgba(0, 0, 0, 0.3);
+          box-shadow: 2px 8px 3px rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+  padding: 15px;
+}
+
+#new #news-box #news-card #card-title {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 10% 30% 60%;
+      grid-template-columns: 10% 30% 60%;
+}
+
+#new #news-box #news-card #card-title h5 {
+  width: 35px;
+  height: 30px;
+  padding: 7px 4px;
+  font-weight: bold;
+  font-size: 8px;
+  background: black;
+  color: white;
+  border-radius: 50%;
+}
+
+#new #news-box #news-card #card-title #title-p {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+#new #news-box #news-card #card-title span {
+  text-align: right;
+  color: #838282;
+}
+
+#new #news-box #news-card #new-text-p {
+  font-size: 12px;
+}
+
+.new-text {
+  font-weight: bold;
+}
+
+.new-text-p {
+  color: #838282;
 }
 /*# sourceMappingURL=style.css.map */
