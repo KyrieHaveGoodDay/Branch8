@@ -1,5 +1,5 @@
 $(function(){
-    var len = 100; // 超過50個字以"..."取代
+    var len = 130; // 超過50個字以"..."取代
     $(".JQellipsis").each(function(i){
         if($(this).text().length>len){
             $(this).attr("title",$(this).text());

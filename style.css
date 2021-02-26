@@ -95,11 +95,11 @@ nav #nav-a a:hover {
 section {
   background: #6aa36a62;
   height: 100%;
-  padding-bottom: 20px;
+  padding-bottom: 50px;
 }
 
 section #Attractions {
-  width: 1400px;
+  width: 1250px;
   text-align: center;
   margin: 0 auto;
   padding-top: 20px;
@@ -131,17 +131,17 @@ section .btn-all {
 }
 
 section #view-box {
-  width: 1400px;
+  width: 1250px;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 450px 450px 450px;
-      grid-template-columns: 450px 450px 450px;
+  -ms-grid-columns: 400px 400px 400px;
+      grid-template-columns: 400px 400px 400px;
   grid-gap: 25px;
   margin: 0 auto;
 }
 
 section #view-box #card-stope {
-  width: 450px;
+  width: 400px;
   background: white;
   -webkit-box-shadow: 2px 8px 3px rgba(0, 0, 0, 0.3);
           box-shadow: 2px 8px 3px rgba(0, 0, 0, 0.3);
@@ -169,6 +169,7 @@ section #view-box #card-stope #card-data p {
 
 section #view-box #card-stope #card-data #card-tage {
   text-align: left;
+  margin-top: 60px;
 }
 
 section #view-box #card-stope #card-data #card-tage span {
