@@ -254,6 +254,7 @@ section #view-box .card-buttom-bt p {
   -webkit-box-shadow: 2px 8px 3px rgba(0, 0, 0, 0.3);
           box-shadow: 2px 8px 3px rgba(0, 0, 0, 0.3);
   border-radius: 5px;
+  margin-bottom: 20px;
 }
 
 #new #events #event-card #event-img img {
@@ -335,6 +336,7 @@ section #view-box .card-buttom-bt p {
           box-shadow: 2px 8px 3px rgba(0, 0, 0, 0.3);
   border-radius: 5px;
   padding: 15px;
+  margin-bottom: 20px;
 }
 
 #new #news-box #news-card #card-title {
