@@ -76,8 +76,8 @@
     </a>
   </div>
   <!-- 景點 -->
-  <section>
-    <div id="Attractions">
+  <section  id="content">
+    <div id="Attractions" >
       <div id="view-title">
         <div id="view-left">
           <p>Surrounding Store</p>
@@ -91,18 +91,16 @@
     </div>
     <!-- Surrounding Store card -->
     <!-- 之後做vue留一個就好 -->
-    <div id="view-box">
-      <div id="card-stope">
-        <img src="./img/view1.jpg" id="view-pic" alt="view">
+    <div id="view-box"  >
+      <div id="card-stope" v-for="d in datas">
+        <img :src="d.image" id="view-pic" alt="view">
         <div id="card-data">
-          <h3>Sky tree</h3>
-          <p class="JQellipsis">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla voluptas architecto
-            veritatis
-            enim doloribus mollitia cupiditate quibusdam nam sunt quas?</p>
+          <h3>{{d.title}}</h3>
+          <p class="JQellipsis">{{d.description}}</p>
           <!-- tage -->
           <div id="card-tage">
-            <span>Restaurant</span>
-            <span>Steak</span>
+            <span>{{d.tag1}}</span>
+            <span>{{d.tag2}}</span>
           </div>
         </div>
         <hr>
@@ -114,80 +112,17 @@
           </div>
           <div class="card-buttom">
             <img src="./img/icon-phome.png" alt="phone">
-            <p>+852 2393 6054</p>
+            <p>{{d.phone}}</p>
           </div>
         </div>
         <!-- 地址另外做一個區塊 -->
         <div class="card-buttom-bt">
           <img src="./img/icon-location.png" alt="location">
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur enim id aliquid quam quasi ea.</p>
+          <p>{{d.address}}</p>
         </div>
 
       </div>
-      <div id="card-stope">
-        <img src="./img/view1.jpg" id="view-pic" alt="view">
-        <div id="card-data">
-          <h3>Sky tree</h3>
-          <p class="JQellipsis">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla voluptas architecto
-            veritatis
-            enim doloribus mollitia cupiditate quibusdam nam sunt quas?</p>
-          <!-- tage -->
-          <div id="card-tage">
-            <span>Restaurant</span>
-            <span>Steak</span>
-          </div>
-        </div>
-        <hr>
-        <div id="card-sm">
-          <!-- 兩個icon格線 -->
-          <div class="card-buttom">
-            <img src="./img/icon-time.png" alt="time">
-            <p>11:30~23:30</p>
-          </div>
-          <div class="card-buttom">
-            <img src="./img/icon-phome.png" alt="phone">
-            <p>+852 2393 6054</p>
-          </div>
-        </div>
-        <!-- 地址另外做一個區塊 -->
-        <div class="card-buttom-bt">
-          <img src="./img/icon-location.png" alt="location">
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur enim id aliquid quam quasi ea.</p>
-        </div>
-
-      </div>
-      <div id="card-stope">
-        <img src="./img/view1.jpg" id="view-pic" alt="view">
-        <div id="card-data">
-          <h3>Sky tree</h3>
-          <p class="JQellipsis">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla voluptas architecto
-            veritatis
-            enim doloribus mollitia cupiditate quibusdam nam sunt quas?</p>
-          <!-- tage -->
-          <div id="card-tage">
-            <span>Restaurant</span>
-            <span>Steak</span>
-          </div>
-        </div>
-        <hr>
-        <div id="card-sm">
-          <!-- 兩個icon格線 -->
-          <div class="card-buttom">
-            <img src="./img/icon-time.png" alt="time">
-            <p>11:30~23:30</p>
-          </div>
-          <div class="card-buttom">
-            <img src="./img/icon-phome.png" alt="phone">
-            <p>+852 2393 6054</p>
-          </div>
-        </div>
-        <!-- 地址另外做一個區塊 -->
-        <div class="card-buttom-bt">
-          <img src="./img/icon-location.png" alt="location">
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur enim id aliquid quam quasi ea.</p>
-        </div>
-
-      </div>
+      
 
     </div>
   </section>
@@ -433,7 +368,7 @@
 
 
 
-
+<script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
     integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
     crossorigin="anonymous"></script>

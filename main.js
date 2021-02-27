@@ -8,3 +8,21 @@ $(function(){
         }
     });
 });
+
+new Vue ({
+    el:"#content",
+    data:{
+        datas:null
+    },
+
+    mounted() {
+        var xhr = new XMLHttpRequest();
+        xhr.open("GET","https://fakerapi.it/api/v1/custom?title=city&image=image&description=text&date=dateTime&phone=phone&tag1=pokemon&tag2=pokemon&tag3=pokemon&address=streetAddress",true)
+        xhr.send();
+        xhr.onload = () => {
+            var obj = JSON.parse(xhr.responseText);
+            this.datas = obj.data;
+            // console.log(datas);
+        }
+    }
+});
