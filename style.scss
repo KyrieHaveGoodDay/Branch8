@@ -1,4 +1,5 @@
 $main-color: rgb(131, 130, 130);
+$phone:767px;
 @mixin title-p {
     font-size: 25px;
     font-weight: bold;
@@ -40,6 +41,12 @@ nav {
     text-align: center;
     background: #fff;
 
+    #menu{
+        display: none;
+        @media screen and (max-width: $phone){
+            display: block;
+          }
+    }
     div > img {
         margin: 10px 0;
     }
@@ -47,11 +54,17 @@ nav {
         text-align: right;
         margin-right: 150px;
         cursor: pointer;
+        @media screen and (max-width: $phone){
+            margin: 0 auto;
+          }
     }
     #nav-a {
         text-decoration: none;
         padding: 15px;
         text-align: left;
+        @media screen and (max-width: $phone){
+            display: none;
+          }
 
         a {
             display: inline-block;
@@ -66,6 +79,11 @@ nav {
 }
 
 // 輪播
+.carousel{
+    @media screen and (max-width: $phone){
+        overflow: hidden;
+      }
+}
 .slick-img {
     height: 400px;
     object-fit: cover;
@@ -114,15 +132,25 @@ section {
     background: #6aa36a62;
     height: 100%;
     padding-bottom: 50px;
+    @media screen and (max-width: $phone){
+        padding: 0 15px;
+    }
     #Attractions {
         width: 1250px;
         text-align: center;
         margin: 0 auto;
         padding-top: 20px;
+        @media screen and (max-width: $phone){
+            width: 100%;
+            // margin: 0 10px;
+          }
 
         #view-title {
             display: grid;
             grid-template-columns: 50% 50%;
+            @media screen and (max-width: $phone){
+                grid-template-columns: 60% 40%;
+              }
         }
         #view-left {
             @include title-p;
@@ -139,15 +167,27 @@ section {
         grid-gap: 25px;
 
         margin: 0 auto;
+        @media screen and (max-width: $phone){
+            width: 100%;
+            grid-template-columns:380px;
+            grid-gap: 0;
+            
+          }
         #card-stope {
             width: 400px;
             background: white;
             box-shadow: 2px 8px 3px rgba(0, 0, 0, 0.3);
             border-radius: 5px;
+            @media screen and (max-width: $phone){
+                width: 380px;
+                margin-bottom: 20px;
+              }
+            
 
             #view-pic {
                 width: 100%;
                 height: 200px;
+                
             }
             #card-data {
                 padding: 10px 20px;
@@ -173,8 +213,9 @@ section {
         }
         // 卡片底部
         .card-buttom {
-            img {
-            }
+            @media screen and (max-width: $phone){
+                padding: 0 10px;
+              }
             p {
                 display: inline;
             }
@@ -183,6 +224,9 @@ section {
             text-align: left;
             display: grid;
             grid-template-columns: 5% 95%;
+            @media screen and (max-width: $phone){
+                padding: 0 10px;
+              }
             p {
                 overflow: hidden;
                 white-space: nowrap;
@@ -206,13 +250,24 @@ section {
     margin-top: 30px;
     grid-gap: 30px;
     margin-bottom: 40px;
+    @media screen and (max-width: $phone){
+        width: 100%;
+        display: block;
+      }
+    
     // event
     #events {
         width: 820px;
+        @media screen and (max-width: $phone){
+            width: 100%;
+          }
 
         #event-title {
             display: grid;
             grid-template-columns: 50% 50%;
+            @media screen and (max-width: $phone){
+                padding: 0 30px;
+              }
             #event-left {
                 @include title-p;
             }
@@ -229,15 +284,27 @@ section {
             box-shadow: 2px 8px 3px rgba(0, 0, 0, 0.3);
             border-radius: 5px;
             margin-bottom: 20px;
+            @media screen and (max-width: $phone){
+                display: block;
+                width: 350px;
+                height: 100%;
+                margin: 0 auto;
+                margin-bottom: 20px;
+              }
             #event-img {
                 img {
                     width: 250px;
                     height: 250px;
                     object-fit: cover;
+                    @media screen and (max-width: $phone){
+                        
+                        width: 100%;
+                      }
                 }
             }
             #event-text {
                 padding: 5px 15px;
+                
                 #text-time {
                     font-size: 30px;
                     color: $main-color;
@@ -257,11 +324,19 @@ section {
             #event-buttom {
                 display: grid;
                 grid-template-columns: 50% 50%;
+                @media screen and (max-width: $phone){
+                        
+                    display: block;
+                  }
                 .event-icon {
                     display: grid;
                     grid-template-columns: 5% 95%;
                     p {
                         margin-left: 20px;
+                        @media screen and (max-width: $phone){
+                        
+                            margin-left: 10px;
+                          }
                     }
                 }
             }
@@ -275,6 +350,10 @@ section {
         #news-title {
             display: grid;
             grid-template-columns: 50% 50%;
+            @media screen and (max-width: $phone){
+                padding: 0 30px;
+                grid-template-columns: 70% 30%;
+              }
             #news-left {
                 @include title-p;
             }
@@ -290,6 +369,11 @@ section {
             border-radius: 5px;
             padding: 15px;
             margin-bottom: 20px;
+            @media screen and (max-width: $phone){
+                width: 350px;
+                margin: 0 auto;
+                margin-bottom: 20px;
+              }
             #card-title {
                 display: grid;
                 grid-template-columns: 10% 30% 60%;

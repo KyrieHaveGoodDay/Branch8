@@ -22,6 +22,16 @@ nav {
   background: #fff;
 }
 
+nav #menu {
+  display: none;
+}
+
+@media screen and (max-width: 767px) {
+  nav #menu {
+    display: block;
+  }
+}
+
 nav div > img {
   margin: 10px 0;
 }
@@ -32,10 +42,22 @@ nav #img-people {
   cursor: pointer;
 }
 
+@media screen and (max-width: 767px) {
+  nav #img-people {
+    margin: 0 auto;
+  }
+}
+
 nav #nav-a {
   text-decoration: none;
   padding: 15px;
   text-align: left;
+}
+
+@media screen and (max-width: 767px) {
+  nav #nav-a {
+    display: none;
+  }
 }
 
 nav #nav-a a {
@@ -47,6 +69,12 @@ nav #nav-a a {
 
 nav #nav-a a:hover {
   border-bottom: 2px solid black;
+}
+
+@media screen and (max-width: 767px) {
+  .carousel {
+    overflow: hidden;
+  }
 }
 
 .slick-img {
@@ -102,6 +130,12 @@ section {
   padding-bottom: 50px;
 }
 
+@media screen and (max-width: 767px) {
+  section {
+    padding: 0 15px;
+  }
+}
+
 section #Attractions {
   width: 1250px;
   text-align: center;
@@ -109,11 +143,24 @@ section #Attractions {
   padding-top: 20px;
 }
 
+@media screen and (max-width: 767px) {
+  section #Attractions {
+    width: 100%;
+  }
+}
+
 section #Attractions #view-title {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 50% 50%;
       grid-template-columns: 50% 50%;
+}
+
+@media screen and (max-width: 767px) {
+  section #Attractions #view-title {
+    -ms-grid-columns: 60% 40%;
+        grid-template-columns: 60% 40%;
+  }
 }
 
 section #Attractions #view-left {
@@ -136,12 +183,28 @@ section #view-box {
   margin: 0 auto;
 }
 
+@media screen and (max-width: 767px) {
+  section #view-box {
+    width: 100%;
+    -ms-grid-columns: 380px;
+        grid-template-columns: 380px;
+    grid-gap: 0;
+  }
+}
+
 section #view-box #card-stope {
   width: 400px;
   background: white;
   -webkit-box-shadow: 2px 8px 3px rgba(0, 0, 0, 0.3);
           box-shadow: 2px 8px 3px rgba(0, 0, 0, 0.3);
   border-radius: 5px;
+}
+
+@media screen and (max-width: 767px) {
+  section #view-box #card-stope {
+    width: 380px;
+    margin-bottom: 20px;
+  }
 }
 
 section #view-box #card-stope #view-pic {
@@ -184,6 +247,12 @@ section #view-box #card-stope #card-sm {
   text-align: left;
 }
 
+@media screen and (max-width: 767px) {
+  section #view-box .card-buttom {
+    padding: 0 10px;
+  }
+}
+
 section #view-box .card-buttom p {
   display: inline;
 }
@@ -194,6 +263,12 @@ section #view-box .card-buttom-bt {
   display: grid;
   -ms-grid-columns: 5% 95%;
       grid-template-columns: 5% 95%;
+}
+
+@media screen and (max-width: 767px) {
+  section #view-box .card-buttom-bt {
+    padding: 0 10px;
+  }
 }
 
 section #view-box .card-buttom-bt p {
@@ -223,8 +298,21 @@ section #view-box .card-buttom-bt p {
   margin-bottom: 40px;
 }
 
+@media screen and (max-width: 767px) {
+  #new {
+    width: 100%;
+    display: block;
+  }
+}
+
 #new #events {
   width: 820px;
+}
+
+@media screen and (max-width: 767px) {
+  #new #events {
+    width: 100%;
+  }
 }
 
 #new #events #event-title {
@@ -232,6 +320,12 @@ section #view-box .card-buttom-bt p {
   display: grid;
   -ms-grid-columns: 50% 50%;
       grid-template-columns: 50% 50%;
+}
+
+@media screen and (max-width: 767px) {
+  #new #events #event-title {
+    padding: 0 30px;
+  }
 }
 
 #new #events #event-title #event-left {
@@ -258,11 +352,27 @@ section #view-box .card-buttom-bt p {
   margin-bottom: 20px;
 }
 
+@media screen and (max-width: 767px) {
+  #new #events #event-card {
+    display: block;
+    width: 350px;
+    height: 100%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+}
+
 #new #events #event-card #event-img img {
   width: 250px;
   height: 250px;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+@media screen and (max-width: 767px) {
+  #new #events #event-card #event-img img {
+    width: 100%;
+  }
 }
 
 #new #events #event-card #event-text {
@@ -301,6 +411,12 @@ section #view-box .card-buttom-bt p {
       grid-template-columns: 50% 50%;
 }
 
+@media screen and (max-width: 767px) {
+  #new #events #event-card #event-buttom {
+    display: block;
+  }
+}
+
 #new #events #event-card #event-buttom .event-icon {
   display: -ms-grid;
   display: grid;
@@ -312,6 +428,12 @@ section #view-box .card-buttom-bt p {
   margin-left: 20px;
 }
 
+@media screen and (max-width: 767px) {
+  #new #events #event-card #event-buttom .event-icon p {
+    margin-left: 10px;
+  }
+}
+
 #new #news-box {
   width: 400px;
 }
@@ -321,6 +443,14 @@ section #view-box .card-buttom-bt p {
   display: grid;
   -ms-grid-columns: 50% 50%;
       grid-template-columns: 50% 50%;
+}
+
+@media screen and (max-width: 767px) {
+  #new #news-box #news-title {
+    padding: 0 30px;
+    -ms-grid-columns: 70% 30%;
+        grid-template-columns: 70% 30%;
+  }
 }
 
 #new #news-box #news-title #news-left {
@@ -341,6 +471,14 @@ section #view-box .card-buttom-bt p {
   border-radius: 5px;
   padding: 15px;
   margin-bottom: 20px;
+}
+
+@media screen and (max-width: 767px) {
+  #new #news-box #news-card {
+    width: 350px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
 }
 
 #new #news-box #news-card #card-title {
