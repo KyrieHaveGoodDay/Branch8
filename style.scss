@@ -419,6 +419,10 @@ section {
     background-repeat: no-repeat;
     background-position: 0 -750px;
     padding-top: 50px;
+    @media screen and (max-width: $phone){
+        background-position: 0 -100px;
+        
+      }
     h2{
         color: $main-color;
         font-size: 26px;
@@ -460,4 +464,8 @@ footer{
     color: $main-color;
     text-align: center;
     padding: 10px 0;
+    @media screen and (max-width: $phone){
+        padding: 10px;
+        
+      }
 }

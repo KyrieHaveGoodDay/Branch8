@@ -526,6 +526,12 @@ section #view-box .card-buttom-bt p {
   padding-top: 50px;
 }
 
+@media screen and (max-width: 767px) {
+  #store {
+    background-position: 0 -100px;
+  }
+}
+
 #store h2 {
   color: #838282;
   font-size: 26px;
@@ -565,5 +571,11 @@ footer #icon-box a {
   color: #838282;
   text-align: center;
   padding: 10px 0;
+}
+
+@media screen and (max-width: 767px) {
+  #copy {
+    padding: 10px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
