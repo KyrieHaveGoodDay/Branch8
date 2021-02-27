@@ -130,12 +130,6 @@ section {
   padding-bottom: 50px;
 }
 
-@media screen and (max-width: 767px) {
-  section {
-    padding: 0 15px;
-  }
-}
-
 section #Attractions {
   width: 1250px;
   text-align: center;
@@ -185,9 +179,9 @@ section #view-box {
 
 @media screen and (max-width: 767px) {
   section #view-box {
-    width: 100%;
-    -ms-grid-columns: 380px;
-        grid-template-columns: 380px;
+    width: 350px;
+    -ms-grid-columns: 350px;
+        grid-template-columns: 350px;
     grid-gap: 0;
   }
 }
@@ -202,7 +196,7 @@ section #view-box #card-stope {
 
 @media screen and (max-width: 767px) {
   section #view-box #card-stope {
-    width: 380px;
+    width: 350px;
     margin-bottom: 20px;
   }
 }

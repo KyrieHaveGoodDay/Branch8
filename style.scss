@@ -132,9 +132,7 @@ section {
     background: #6aa36a62;
     height: 100%;
     padding-bottom: 50px;
-    @media screen and (max-width: $phone){
-        padding: 0 15px;
-    }
+    
     #Attractions {
         width: 1250px;
         text-align: center;
@@ -142,7 +140,7 @@ section {
         padding-top: 20px;
         @media screen and (max-width: $phone){
             width: 100%;
-            // margin: 0 10px;
+            
           }
 
         #view-title {
@@ -168,8 +166,8 @@ section {
 
         margin: 0 auto;
         @media screen and (max-width: $phone){
-            width: 100%;
-            grid-template-columns:380px;
+            width: 350px;
+            grid-template-columns:350px;
             grid-gap: 0;
             
           }
@@ -179,7 +177,7 @@ section {
             box-shadow: 2px 8px 3px rgba(0, 0, 0, 0.3);
             border-radius: 5px;
             @media screen and (max-width: $phone){
-                width: 380px;
+                width: 350px;
                 margin-bottom: 20px;
               }
             
