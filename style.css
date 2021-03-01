@@ -513,6 +513,8 @@ section #view-box .card-buttom-bt p {
 
 .new-text-p {
   color: #838282;
+  height: 50px;
+  font-size: 14px;
 }
 
 #store {
